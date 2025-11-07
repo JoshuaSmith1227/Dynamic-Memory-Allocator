@@ -37,6 +37,5 @@ Tested on industry-standard malloc traces:
 |--------|-------|
 | **Memory Utilization** | 73.4% |
 | **Throughput** | 7,719 KOPS |
-| **Overall Score** | 98.2/100 |
 
 ### Trace Results
