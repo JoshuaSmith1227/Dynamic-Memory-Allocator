@@ -1,6 +1,6 @@
 # High-Performance Dynamic Memory Allocator
 
-A custom implementation of `malloc`, `free`, `realloc`, and `calloc` in C, achieving 98/100 performance score with 73% memory utilization and 7,700+ KOPS throughput.
+A custom implementation of `malloc`, `free`, `realloc`, and `calloc` in C with 73% memory utilization and 7,700+ KOPS throughput.
 
 ## Overview
 
@@ -153,22 +153,6 @@ The implementation includes a comprehensive heap checker that validates:
 - Coalescing (no consecutive free blocks)
 - Free list consistency
 - Boundary tag correctness
-
-## File Structure
-```
-.
-├── mm.c              # Main allocator implementation
-├── mm.h              # Public interface
-├── memlib.c          # Memory system simulator
-├── memlib.h          # Memory system interface
-├── mdriver.c         # Test driver
-├── Makefile          # Build configuration
-└── traces/           # Test workloads
-    ├── syn-*.rep     # Synthetic traces
-    ├── bdd-*.rep     # Binary decision diagram traces
-    ├── cbit-*.rep    # Bit manipulation traces
-    └── ngram-*.rep   # Natural language traces
-```
 
 ## Technical Highlights
 
