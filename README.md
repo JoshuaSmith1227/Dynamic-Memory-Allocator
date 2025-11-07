@@ -154,6 +154,20 @@ The implementation includes a comprehensive heap checker that validates:
 - Free list consistency
 - Boundary tag correctness
 
+## File Structure
+```
+.
+├── mm.c              # Main allocator implementation
+├── mm.h              # Public interface
+├── memlib.c          # Memory system simulator
+├── memlib.h          # Memory system interface
+├── mdriver.c         # Test driver
+├── Makefile          # Build configuration
+└── traces/           # Test workloads
+    ├── syn-*.rep     # Synthetic traces
+    ├── bdd-*.rep     # Binary decision diagram traces
+    ├── cbit-*.rep    # Bit manipulation traces
+    └── ngram-*.rep   # Natural language traces
 ```
 
 ## Technical Highlights
